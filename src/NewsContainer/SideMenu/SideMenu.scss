@@ -1,0 +1,25 @@
+.container-side-menu {
+  border: 1px solid black;
+  border-radius: 0 10px 10px 0px;
+  padding: 0.5rem;
+  background-color: #1f1f23;
+  color: #efecf1;
+}
+.country-bar {
+  display: flex;
+  margin-left: 0.5rem;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    background-color: #efecf1;
+    color: #1f1f23;
+  }
+  p {
+    margin: 1rem;
+  }
+}
+.country-flag {
+  margin: 2px 5px;
+}
