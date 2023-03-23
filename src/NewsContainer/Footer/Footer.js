@@ -6,7 +6,7 @@ const Footer = ({ data }) => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   (function() {
-    setInterval(() => {
+    setTimeout(() => {
       setHour(today.getHours());
       setMinutes(today.getMinutes());
       setSeconds(today.getSeconds());
