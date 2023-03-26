@@ -8,7 +8,7 @@ const Content = ({ data, getNews }) => {
   return (
     <div className="d-flex container-content col-12">
       <SideMenu getNews={getNews} />
-      <div className="row justify-content-center col-11">
+      <div className="row article-container justify-content-center col-10">
         {data &&
           data.articles?.map((article) => (
             <Article article={article} key={uuidv4()} />
