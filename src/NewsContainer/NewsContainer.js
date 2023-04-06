@@ -10,7 +10,7 @@ const NewsContainer = () => {
   async function getNews(country) {
     try {
       const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=156f4ef999704ede810eb6091086172a`
+        `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${process.env.REACT_APP_API_KEY}`
       );
       console.log(response.data);
       setData(response.data);
